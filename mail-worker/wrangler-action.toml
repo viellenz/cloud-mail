@@ -6,7 +6,7 @@ compatibility_date = "2025-06-04"
 enabled = true
 
 [[routes]]
-pattern = "${CUSTOM_DOMAIN}"
+pattern = "mail.ipx-811.me"
 custom_domain = true
 
 [[routes]]

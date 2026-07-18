@@ -15,7 +15,7 @@ jobs:
 
     env:
       NAME: ${{ secrets.NAME || vars.NAME || 'cloud-mail' }}
-      CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN || vars.CUSTOM_DOMAIN }}
+      CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN || vars.CUSTOM_DOMAIN || 'mail.ipx-811.me' }}
       DOMAIN: '["142code.me","icici.de5.net","icicss.me","ipx-811.me","lx142.me","viee.me","vvvii.de5.net"]'
       ADMIN: ${{ secrets.ADMIN || vars.ADMIN }}
       JWT_SECRET: ${{ secrets.JWT_SECRET || vars.JWT_SECRET }}
@@ -90,6 +90,7 @@ jobs:
           fi
           
           CONFIG_FILE="wrangler-action.toml"
+          sed -i 's/\r$//' "$CONFIG_FILE"
           
           if [ -z "$R2_BUCKET_NAME" ]; then
             sed -i '/\[\[r2_buckets\]\]/,/^$/d' "$CONFIG_FILE"

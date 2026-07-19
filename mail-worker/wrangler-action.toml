@@ -10,10 +10,6 @@ enabled = true
 pattern = "mail.viee.me"
 custom_domain = true
 
-[[routes]]
-pattern = "imail.icicss.me"
-custom_domain = true
-
 [[d1_databases]]
 binding = "db"
 database_name = "cloud-mail"

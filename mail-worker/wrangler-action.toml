@@ -7,10 +7,6 @@ workers_dev = false
 enabled = true
 
 [[routes]]
-pattern = "mail.ipx-811.me"
-custom_domain = true
-
-[[routes]]
 pattern = "mail.viee.me"
 custom_domain = true
 

@@ -11,6 +11,10 @@ pattern = "mail.ipx-811.me"
 custom_domain = true
 
 [[routes]]
+pattern = "mail.viee.me"
+custom_domain = true
+
+[[routes]]
 pattern = "imail.icicss.me"
 custom_domain = true
 

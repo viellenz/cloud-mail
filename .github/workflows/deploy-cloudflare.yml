@@ -16,7 +16,7 @@ jobs:
 
     env:
       NAME: ${{ secrets.NAME || vars.NAME || 'cloud-mail' }}
-      CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN || vars.CUSTOM_DOMAIN || 'mail.ipx-811.me' }}
+      CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN || vars.CUSTOM_DOMAIN || 'mail.viee.me' }}
       DOMAIN: '["icici.de5.net","icicss.me","ipx-811.me","lx142.me","viee.me","vvvii.de5.net"]'
       ADMIN: ${{ secrets.ADMIN || vars.ADMIN }}
       JWT_SECRET: ${{ secrets.JWT_SECRET || vars.JWT_SECRET }}
